@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  font-size: 16px;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: Rubik, sans-serif;
+}
+body .label {
+  font-size: 2rem;
+}
+
+.header {
+  padding-top: 30px;
+  background: #222222;
+  color: #E5E5E5;
+}
+.header .container {
+  padding-left: 3%;
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  .header .container {
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .header .container .avatar {
+    margin: 0 auto;
+  }
+  .header .container .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    width: 100%;
+  }
+  .header .container .info .surname {
+    text-align: center;
+  }
+}
+.header .avatar {
+  margin-bottom: -100px;
+}
+.header .info {
+  padding-left: 20px;
+  align-self: flex-end;
+}
+.header .info .surname {
+  font-weight: 500;
+  font-size: 3rem;
+}
+.header .info .social {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.header .info .social a {
+  padding-right: 10px;
+}
+
+.main {
+  margin: 0 auto;
+  padding-left: 3%;
+  padding-right: 3%;
+  max-width: 1200px;
+  background: #FFFFFF;
+  padding-top: 50px;
+  display: grid;
+}
+@media (min-width: 769px) {
+  .main {
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "developing about" "developing skills";
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "about skills" "developing developing";
+  }
+}
+@media (max-width: 600px) {
+  .main {
+    grid-template-areas: "about about" "developing developing" "skills skills";
+  }
+}
+@media (min-width: 600px) and (max-width: 768px) {
+  .main {
+    padding-top: 70px;
+  }
+}
+.main .about {
+  max-width: 300px;
+  grid-area: about;
+}
+@media (max-width: 600px) {
+  .main .about {
+    justify-self: center;
+  }
+}
+.main .about .card {
+  position: relative;
+  z-index: 2;
+  margin-left: 7%;
+  background: #F3F3F3;
+  border: solid black 2px;
+  padding: 5%;
+  border-radius: 10px;
+}
+.main .about svg {
+  margin-top: -125px;
+  z-index: 1;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.57' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+  width: 100%;
+}
+.main .about .content {
+  display: grid;
+  row-gap: 5px;
+  column-gap: 5px;
+  grid-template-columns: 20% 70%;
+  align-items: center;
+  justify-items: left;
+}
+.main .about .content .pictogram {
+  width: 40px;
+  height: 40px;
+}
+.main .skills {
+  max-width: 300px;
+  grid-area: skills;
+}
+@media (max-width: 600px) {
+  .main .skills {
+    justify-self: center;
+  }
+}
+.main .skills .card {
+  position: relative;
+  z-index: 2;
+  margin-left: 7%;
+  background: #F3F3F3;
+  border: solid black 2px;
+  padding: 5%;
+  border-radius: 10px;
+}
+.main .skills svg {
+  margin-top: -125px;
+  z-index: 1;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.57' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .main .skills {
+    padding-top: 50px;
+  }
+}
+.main .developing {
+  margin-top: 50px;
+}
+.main .developing .chapter {
+  padding-top: 25px;
+}
+.main .developing .chapter .period {
+  font-size: 1.5rem;
+}
+.main .developing .chapter .projectName {
+  font-size: 1.5rem;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  src: url(res/fonts/rubik_medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  src: url(res/fonts/rubik_light.ttf);
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=index.css.map */
