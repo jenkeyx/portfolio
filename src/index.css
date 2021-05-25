@@ -87,6 +87,7 @@ body .label {
 }
 @media (max-width: 600px) {
   .main {
+    align-items: center;
     grid-template-areas: "about about" "developing developing" "skills skills";
   }
 }
