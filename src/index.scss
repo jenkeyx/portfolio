@@ -60,6 +60,7 @@ body {
     }
 
     .social {
+
       display: flex;
       align-items: center;
       justify-items: center;
@@ -67,6 +68,10 @@ body {
       padding-bottom: 20px;
 
       a {
+
+        img{
+          width: 45px;
+        }
         padding-right: 10px;
       }
     }
@@ -166,6 +171,7 @@ body {
 
   .developing {
     margin-top: 50px;
+    margin-left: 10%;
 
     .chapter {
       padding-top: 25px;

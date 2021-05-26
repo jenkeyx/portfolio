@@ -63,6 +63,9 @@ body .label {
 .header .info .social a {
   padding-right: 10px;
 }
+.header .info .social a img {
+  width: 45px;
+}
 
 .main {
   margin: 0 auto;
@@ -165,6 +168,7 @@ body .label {
 }
 .main .developing {
   margin-top: 50px;
+  margin-left: 10%;
 }
 .main .developing .chapter {
   padding-top: 25px;
