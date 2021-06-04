@@ -179,6 +179,9 @@ body .label {
 .main .developing .chapter .projectName {
   font-size: 1.5rem;
 }
+.main .developing .chapter .projectName .link-icon {
+  width: 1.5rem;
+}
 
 @font-face {
   font-family: Rubik;
